@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6 curso em vídeo</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo !</h1>
+    <p>Já me livrei da maldição !</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '))//prompt por padrão retorna valores em string
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} + ${n2} é igual a ${soma}`)//Símbolo de + representa concatenação e tbm adição
+        //(number + number) o JS entende como adição
+        //(string + string) o JS entende como concatenação
+
+        //precisamos realizar nesse caso uma conversão de tipo
+        //Number.parseInt(n) p/ números inteiros
+        //Number.parseFloat(n) p/ números reais
+
+        //O uso apenas de Number(n) também é útil, o JS consegue definir o tipo sozinho se é Int ou Float.
+
+        //Também é possível fazer a conversão de número para string
+        //Usa-se apenas String(n) ou n.ToString()
+    </script>
+</body>
+</html>

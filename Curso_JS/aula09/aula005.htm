@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+    <style>
+        body {
+            background: rgb(34, 153, 183);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">clique em mim</div>
+
+    <script>
+        //var p1 = document.getElementsByTagName('p')[1]
+        //window.document.write('Está escrito: ' + p1.innerHTML)
+
+        //var d = document.getElementById('msg')
+        //d.style.background = 'purple'
+        //d.innerText = 'Carregando...'
+        //window.document.getElementById('msg').innerText = 'Carregando...' | esse seria o comando completo.
+
+        //var d = document.getElementsByName('msg')[0]
+        //d.style.background = 'green'
+
+        //var c = document.getElementsByClassName('msg')[0]
+        //c.style.background = 'purple'
+
+        var d = document.querySelector('div#msg') 
+        //comentário - id = # e class = .
+        d.style.color = 'black'
+        d.style.background = 'purple'
+    </script>
+</body>
+</html>

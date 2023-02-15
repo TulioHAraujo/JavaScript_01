@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geladeira</title>
+</head>
+<body>
+    <p>A geladeira está: <input type="text" name="txtgela" id="txtgela">
+        <input type="button" value="verificar" onclick="testar()">
+    </p>
+    <div id="res">
+
+    </div>
+
+    <script>
+        function testar() {
+            var gel = document.querySelector('input#txtgela')
+            var res = document.querySelector('div#res')
+            var test = String(gel.value)
+            res.innerHTML = `<p>A geladeira está ${test}!</p>`
+            if (test != 'fechada') {
+                res.innerHTML += `<p>Por favor, após usar, mantenha a geladeira fechada !</p>`
+            } else {
+                res.innerHTML += `<p>Abra para usar e depois deixe fechada novamente. Obrigado !</p>`
+            }
+        }
+    </script>
+</body>
+</html>

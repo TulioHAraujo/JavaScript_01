@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem de Nacionalidade</title>
+    <style>
+        #txtnac {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Em qual país você nasceu ?</h1>
+    Digite seu país de origem: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Pesquisar" onclick="buscar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function buscar() {
+            var txtn = document.querySelector('input#txtnac')
+            var res = document.querySelector('div#res')
+            var origem = String(txtn.value)
+            res.innerHTML = `<p>O seu país de origem é ${origem} !</p>`
+            if (origem != 'Brasil') {
+                res.innerHTML += `<p>Você não é brasileiro</p>`
+            } else {
+                res.innerHTML += `Você é brasileiro !`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+            //FORMATANDO STRINGS
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`<p>Olá, ${nome} ! Seu nome tem ${nome.length} letras.</p>`)
+        //O comando document.write vai mostrar o output(resultado) no Body da página e não numa janela igual o prompt.
+        document.write(`<p>Este é o seu nome em letras maiúsculas: ${nome.toUpperCase()}</p>`)
+        //Importante, no caso de algumas propriedades do JS é necessário colocar o () mesmo que vazio para que funcione.
+        document.write(`Este é o seu nome em letras minúsculas: ${nome.toLowerCase()}`)
+    </script>
+
+
+    <p>
+        Precedência no JS:
+        () primeiro resolvem-se os parênteses.
+        ** depois as potências.
+        * / % em seguida multiplicação e divisões, independente  da ordem entre eles.
+        + - e por último adição e subtração independente da ordem.
+    </p>
+</body>
+</html>
